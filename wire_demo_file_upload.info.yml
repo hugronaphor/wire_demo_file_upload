@@ -1,0 +1,6 @@
+name: Wire Demo File Upload
+type: module
+description: Demo of Drag and Drop File upload using Wire.
+core_version_requirement: ^10
+dependencies:
+  - wire:wire

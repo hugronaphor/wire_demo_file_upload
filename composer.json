@@ -1,0 +1,22 @@
+{
+    "name": "hugronaphor/wire_demo_file_upload",
+    "description": "Demo of Drag and Drop File upload using Wire.",
+    "type": "drupal-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Cornel Andreev",
+            "email": "hugronaphor@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "drupal/core": "^10",
+        "wire-drupal/wire": "dev-main"
+    }
+}

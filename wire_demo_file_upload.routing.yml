@@ -1,0 +1,7 @@
+wire_demo_file_upload.file_upload:
+  path: '/wire-demo/file-upload'
+  defaults:
+    _title: 'File upload'
+    _controller: '\Drupal\wire_demo_file_upload\Controller\WireDemoFileUploadController::build'
+  requirements:
+    _permission: 'access content'
