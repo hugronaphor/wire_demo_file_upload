@@ -56,9 +56,9 @@
 
     {% endif %}
 
-    {% if message %}
+    {% if successMessage %}
 
-      <div class="mt-2 text-green-500">{{ message }}</div>
+      <div class="mt-2 text-green-500">{{ successMessage }}</div>
 
     {% endif %}
 
@@ -91,21 +91,21 @@
           this.isUploading = true
 
           // Successfully finished upload.
-        @this.upload('myFile', file, function (success) {
-            $this.isUploading = false
-            $this.progress = 0
-          },
+          @this.upload('myFile', file, function (success) {
+              $this.isUploading = false
+              $this.progress = 0
+            },
 
-          // Errored.
-          function (error) {
-            console.error(error)
-          },
+            // Errored.
+            function (error) {
+              console.error(error)
+            },
 
-          // Upload progress.
-          function (event) {
-            $this.progress = event.detail.progress
-          }
-        )
+            // Upload progress.
+            function (event) {
+              $this.progress = event.detail.progress
+            }
+          )
 
         }
       }

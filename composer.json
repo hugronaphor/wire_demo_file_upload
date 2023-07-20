@@ -17,6 +17,7 @@
     ],
     "require": {
         "drupal/core": "^10",
-        "wire-drupal/wire": "dev-main"
+        "wire-drupal/wire": "dev-main",
+        "hugronaphor/php-helpers": "^1"
     }
 }
