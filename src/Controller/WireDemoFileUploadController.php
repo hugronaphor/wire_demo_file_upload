@@ -6,14 +6,19 @@ use Drupal\Core\Controller\ControllerBase;
 
 class WireDemoFileUploadController extends ControllerBase {
 
-  public function build() {
+  public function build(): array {
 
-    $build['content'] = [
-      '#type' => 'wire',
-      '#id' => 'drag_and_drop_file_upload',
+    return [
+      'content' => [
+        '#type' => 'wire',
+        '#id' => 'drag_and_drop_file_upload',
+      ],
+      '#attached' => [
+        'library' => [
+          'wire/alpinejs',
+        ],
+      ],
     ];
-
-    return $build;
   }
 
 }
